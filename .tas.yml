@@ -1,0 +1,16 @@
+---
+framework: jasmine
+preRun:
+     command:
+        - npm install
+preMerge:
+  pattern:
+    - "./src/spec/**/*.specs.js"
+postMerge:
+  pattern: 
+    - "./src/spec/**/*.specs.js"
+postRun:
+     command:
+        - node --version
+configFile: karma.conf.js
+version: 1.0
